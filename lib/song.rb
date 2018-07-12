@@ -9,7 +9,7 @@ class Song
     @name = name
     self.artist = artist if artist
     self.genre = genre if genre
-    @@all = []
+    # @@all = []
   end
 
   def artist=(artist)
