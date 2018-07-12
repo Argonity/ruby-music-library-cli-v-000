@@ -8,7 +8,6 @@ class MusicLibraryController
     input = ""
 
     while input != "exit"
-
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
       puts "To list all of the artists in your library, enter 'list artists'."
@@ -38,33 +37,33 @@ class MusicLibraryController
     end
   end
 
-    def list_songs
-      Song.all.sort{|a, b| a.name <=> b.name}.each.with_index(1) do |s, i|
-      puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
-      end
+  def list_songs
+    Song.all.sort{|a, b| a.name <=> b.name}.each.with_index(1) do |s, i|
+    puts "#{i}. #{s.artist.name} - #{s.name} - #{s.genre.name}"
     end
+  end
 
-    def list_artists
-      Artist.all.sort{|a, b| a.name <=> b.name}.each.with_index(1) do |a, i|
-      puts "#{i}. #{a.artist.name}"
-      end
+  def list_artists
+    Artist.all.sort{|a, b| a.name <=> b.name}.each.with_index(1) do |a, i|
+    puts "#{i}. #{a.artist.name}"
     end
+  end
 
-    def list_genres
+  def list_genres
 
-    end
+  end
 
-    def list_songs_by_artist
+  def list_songs_by_artist
 
-    end
+  end
 
-    def list_songs_by_genre
+  def list_songs_by_genre
 
-    end
+  end
 
-    def play_song
+  def play_song
 
-    end
+  end
 
 
 end
